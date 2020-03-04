@@ -18,17 +18,13 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         print("hi")
-        print("hello ")
-          print("hello ")
-          print("hello ")
-          print("hello ")
-          print("hello ")
-          print("hello ")
-          print("hello ")
-          print("hello ")
-          print("hello ")
+        ApiManager.shared.httpRequest(urlString: "http://174.138.27.227:8190/wallet/generateaddress", method: "GET") { (response, error) in
+            if response != nil {
+                print(response)
+            }else {
+                print(error!.localizedDescription)
+            }
+        }
     }
-
-
 }
 
