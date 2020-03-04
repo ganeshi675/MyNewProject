@@ -14,6 +14,7 @@ class ApiManager{
     var name = "Aman"
     var add = 0
     var sum = 0
+    var email = "aman.joshi@Ftechiz.com"
     static let shared = ApiManager()
     
     func httpRequest(urlString:String, method:String, completion:@escaping (_ result:[String:Any]?, _ error:Error?) -> Void) {
@@ -26,10 +27,12 @@ class ApiManager{
                     let json = try JSONSerialization.jsonObject(with: data!, options: .allowFragments)
                     if let jsonObject = json as? [String:Any] {
                         print(jsonObject)
+                        print("Back")
                         completion(jsonObject, nil)
                     }
                 }catch {
                     print(error.localizedDescription)
+                    print("Hello")
                     completion(nil, error)
                 }
             }else {
