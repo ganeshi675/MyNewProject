@@ -36,4 +36,8 @@ class ApiManager{
             }
         }
     }
+    func action() {
+        var obj = "ganeshi"
+    }
 }
+//https://github.com/ganeshi675/MyNewProject.git
