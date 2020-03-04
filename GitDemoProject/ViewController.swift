@@ -9,9 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-    var a = ""
-    var b = ""
-    var c = ""
+    
     
 
     override func viewDidLoad() {
