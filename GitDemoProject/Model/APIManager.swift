@@ -16,6 +16,7 @@ class ApiManager{
     var name1 = "sgjg"
     var age = 12345
     var email = "aman.joshi@Ftechiz.com"
+    var name2 = "ganeshi"
 
     static let shared = ApiManager()
     
