@@ -12,8 +12,11 @@ import Foundation
 class ApiManager{
     
     var name = "Aman"
-    var add = 0
-    var sum = 0
+    var secondName = "aman"
+
+    
+    
+    
     static let shared = ApiManager()
     
     func httpRequest(urlString:String, method:String, completion:@escaping (_ result:[String:Any]?, _ error:Error?) -> Void) {
@@ -37,8 +40,5 @@ class ApiManager{
                 completion(nil, error)
             }
         }
-    }
-    func action() {
-        var obj = "ganeshi"
     }
 }
