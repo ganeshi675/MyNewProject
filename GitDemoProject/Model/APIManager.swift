@@ -12,9 +12,9 @@ import Foundation
 class ApiManager{
     
     var name = "Aman"
-    var secondName = "aman"
-    var name1 = "sgjg"
-    var age = 12345
+    var age = 100
+    var address = "abcd"
+    
     
     
     
