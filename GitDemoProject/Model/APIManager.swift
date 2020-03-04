@@ -21,6 +21,7 @@ class ApiManager{
     var b = 894589659
     var c = 93689689460
     var hj = "hgwejkg"
+    
     var ej = 7468684
     let aa = 1
     let ab = 10
@@ -28,6 +29,8 @@ class ApiManager{
     static let shared = ApiManager()
     
     func httpRequest(urlString:String, method:String, completion:@escaping (_ result:[String:Any]?, _ error:Error?) -> Void) {
+        let ab = 10
+        let ca = 100
         
         let urlSession = URLSession.shared
         
