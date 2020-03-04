@@ -17,7 +17,6 @@ class ApiManager{
     var age = 12345
     
     
-    
     static let shared = ApiManager()
     
     func httpRequest(urlString:String, method:String, completion:@escaping (_ result:[String:Any]?, _ error:Error?) -> Void) {
