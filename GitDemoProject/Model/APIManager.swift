@@ -20,6 +20,7 @@ class ApiManager{
     
     
     var a = 65234875
+    var b = 894589659
 
     static let shared = ApiManager()
     
