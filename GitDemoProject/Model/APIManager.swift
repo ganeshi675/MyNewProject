@@ -30,15 +30,10 @@ class ApiManager{
             if error == nil{
                 do {
                     let json = try JSONSerialization.jsonObject(with: data!, options: .allowFragments)
-                    if let jsonObject = json as? [String:Any] {
-                        print(jsonObject)
-                        print("Back")
-                        completion(jsonObject, nil)
-                    }
+                    print(json)
                 }catch {
                     print(error.localizedDescription)
-                    print("Hello")
-                    completion(nil, error)
+                   
                 }
             }else {
                 print(error!.localizedDescription)
