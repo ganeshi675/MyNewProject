@@ -14,10 +14,12 @@ class ApiManager{
     var name = "Aman"
     var age = 100
     var address = "abcd"
-    
-    
-    
-    
+    var name1 = "sgjg"
+    var email = "aman.joshi@Ftechiz.com"
+    var name2 = "ganeshi"
+    var a = 65234875
+    var b = 894589659
+
     static let shared = ApiManager()
     
     func httpRequest(urlString:String, method:String, completion:@escaping (_ result:[String:Any]?, _ error:Error?) -> Void) {
@@ -30,10 +32,12 @@ class ApiManager{
                     let json = try JSONSerialization.jsonObject(with: data!, options: .allowFragments)
                     if let jsonObject = json as? [String:Any] {
                         print(jsonObject)
+                        print("Back")
                         completion(jsonObject, nil)
                     }
                 }catch {
                     print(error.localizedDescription)
+                    print("Hello")
                     completion(nil, error)
                 }
             }else {
