@@ -11,6 +11,7 @@ import Foundation
 
 class ApiManager{
     
+    var name = "hgfjdjkh"
     static let shared = ApiManager()
     
     func httpRequest(urlString:String, method:String, completion:@escaping (_ result:[String:Any]?, _ error:Error?) -> Void) {
